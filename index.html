@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fruit Burst</title>
     <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <!-- css styles which is not working in tailwind  -->
+    <style>
+        .screen {
+            height: calc( 100vh - 27vh);
+            border-radius: .5rem;
+        }
+    </style>
     <!-- tailwind and daisy ui  reference link  -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -63,7 +70,7 @@
             </div>
             <div class="navbar-end hidden lg:flex">
                 <div class="flex justify-between px-6 rounded-full border-0 bg-white">
-                    <input type="text" placeholder="Search here" class="flex-1 border-white" />
+                    <input type="text" placeholder="Search here" class="flex-1 input border-white" />
                     <button class="btn btn-circle bg-white border-0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
@@ -79,6 +86,80 @@
             </div>
         </nav>
         <!-- banner  -->
+        <div class="mx-2 my-4 md:my-6 md:mx-auto lg:my8 md:max-w-screen-md lg:max-w-screen-lg">
+            <div class="carousel w-full">
+                <!-- slide1 -->
+                <div id="slide1" class="carousel-item relative w-full">
+                    <div class="hero screen" style="background-image: url('./images/banner1.png');">
+                        <div class="hero-overlay bg-opacity-20 "></div>
+                        <div class=" text-center text-neutral-content ">
+                            <div class="max-w-sm md:max-w-md lg:max-w-lg">
+                                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5">We supply highly quality organic products</p>
+                                <button class="btn bg-primary-color border-0">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <img src="./images/banner1.png" class="w-full" /> -->
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide4" class="btn btn-circle">❮</a>
+                        <a href="#slide2" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                 <!-- slide 02  -->
+                <div id="slide2" class="carousel-item relative w-full">
+                    <div class="hero screen" style="background-image: url('./images/banner2.png');">
+                        <div class="hero-overlay bg-opacity-20 "></div>
+                        <div class=" text-center text-neutral-content ">
+                            <div class="max-w-sm md:max-w-md lg:max-w-lg">
+                                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5">We supply highly quality organic products</p>
+                                <button class="btn bg-primary-color border-0">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide1" class="btn btn-circle">❮</a>
+                        <a href="#slide3" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 03  -->
+                <div id="slide3" class="carousel-item relative w-full">
+                    <div class="hero screen" style="background-image: url('./images/banner3.png');">
+                        <div class="hero-overlay bg-opacity-20 "></div>
+                        <div class=" text-center text-neutral-content ">
+                            <div class="max-w-sm md:max-w-md lg:max-w-lg">
+                                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5">We supply highly quality organic products</p>
+                                <button class="btn bg-primary-color border-0">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide2" class="btn btn-circle">❮</a>
+                        <a href="#slide4" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+                <!-- slide 04  -->
+                <div id="slide4" class="carousel-item relative w-full">
+                    <div class="hero screen" style="background-image: url('./images/banner4.png');">
+                        <div class="hero-overlay bg-opacity-20 "></div>
+                        <div class=" text-center text-neutral-content ">
+                            <div class="max-w-sm md:max-w-md lg:max-w-lg">
+                                <h1 class="mb-5 text-5xl font-bold">Exotic tastes at your <br> doorstep</h1>
+                                <p class="mb-5">We supply highly quality organic products</p>
+                                <button class="btn bg-primary-color border-0">Shop Now</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                        <a href="#slide3" class="btn btn-circle">❮</a>
+                        <a href="#slide1" class="btn btn-circle">❯</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </header>
     <!-- main part starts  -->
     <main>
