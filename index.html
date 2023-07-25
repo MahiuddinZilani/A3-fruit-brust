@@ -9,7 +9,7 @@
     <!-- css styles which is not working in tailwind  -->
     <style>
         .screen {
-            height: calc( 100vh - 27vh);
+            height: calc(100vh - 27vh);
             border-radius: .5rem;
         }
     </style>
@@ -86,7 +86,7 @@
             </div>
         </nav>
         <!-- banner  -->
-        <div class="mx-2 my-4 md:my-6 md:mx-auto lg:my8 md:max-w-screen-md lg:max-w-screen-lg">
+        <div class="static mx-2 my-4 md:relative md:my-6 md:mx-auto lg:my8 md:max-w-screen-md lg:max-w-screen-lg">
             <div class="carousel w-full">
                 <!-- slide1 -->
                 <div id="slide1" class="carousel-item relative w-full">
@@ -106,7 +106,7 @@
                         <a href="#slide2" class="btn btn-circle">❯</a>
                     </div>
                 </div>
-                 <!-- slide 02  -->
+                <!-- slide 02  -->
                 <div id="slide2" class="carousel-item relative w-full">
                     <div class="hero screen" style="background-image: url('./images/banner2.png');">
                         <div class="hero-overlay bg-opacity-20 "></div>
@@ -158,8 +158,45 @@
                     </div>
                 </div>
             </div>
+            <!-- fruits card on the bottom of the banner  -->
+            <div class="static flex flex-col md:w-4/5 mx-auto gap-x-1 md:absolute left-[10%] bottom-0 translate-y-1/2 md:grid md:grid-cols-5 bg-white md:rounded-lg">
+                <!-- card 01  -->
+                <div class="card bg-base-100 flex flex-col justify-between">
+                    <figure class="px-4 pt-4">
+                        <img src="/images/fruit1.png" alt="fruits" class="rounded-xl" />
+                    </figure>
+                    <h2 class="card-body text-xl font-medium">Strawberry</h2>
+                </div>
+                <!-- card 02  -->
+                <div class="card bg-base-100 flex flex-col justify-between">
+                    <figure class="px-4 pt-4">
+                        <img src="/images/fruit2.png" alt="fruits" class="rounded-xl" />
+                    </figure>
+                    <h2 class="card-body text-xl font-medium ">Orange</h2>
+                </div>
+                <!-- card 03  -->
+                <div class="card bg-base-100 flex flex-col justify-between">
+                    <figure class="px-4 pt-4">
+                        <img src="/images/fruit3.png" alt="fruits" class="rounded-xl" />
+                    </figure>
+                    <h2 class="card-body text-xl font-medium">Mango</h2>
+                </div>
+                <!-- card 04  -->
+                <div class="card bg-base-100 flex flex-col justify-between">
+                    <figure class="px-4 pt-4">
+                        <img src="/images/fruit4.png" alt="fruits" class="rounded-xl" />
+                    </figure>
+                    <h2 class="card-body text-xl font-medium">Strawberry</h2>
+                </div>
+                <!-- card 05  -->
+                <div class="card bg-base-100 flex flex-col justify-between">
+                    <figure class="px-4 pt-4">
+                        <img src="/images/fruit5.png" alt="fruits" class="rounded-xl" />
+                    </figure>
+                    <h2 class="card-body text-xl font-medium">Pomegranate</h2>
+                </div>
+            </div>
         </div>
-
     </header>
     <!-- main part starts  -->
     <main>
