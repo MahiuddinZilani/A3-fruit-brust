@@ -63,7 +63,8 @@
 <body class="lato">
     <header class="mx-2 my-4 md:my-6 md:mx-auto lg:my-8 md:max-w-screen-md lg:max-w-screen-lg ">
         <!-- navigation bar  -->
-        <nav class="navbar  flex flex-row-reverse justify-between lg:flex-row bg-white md:bg-primary-color md:text-white px-8 py-4  rounded-full">
+        <nav
+            class="navbar  flex flex-row-reverse justify-between lg:flex-row bg-white md:bg-primary-color md:text-white px-8 py-4  rounded-full">
             <!-- left part of navigation bar  -->
             <div class="navbar-start lg:hidden justify-end">
                 <div class="dropdown flex justify-end">
@@ -74,7 +75,8 @@
                                 d="M4 6h16M4 12h8m-8 6h16" />
                         </svg>
                     </label>
-                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black">
                         <li><a>Home</a></li>
                         <li><a>About Us</a></li>
                         <li><a>Shop</a></li>
@@ -98,7 +100,8 @@
             <!-- right part of the navigation bar  -->
             <div class="navbar-end hidden lg:flex">
                 <div class="flex justify-between px-6 rounded-full border-0 bg-white">
-                    <input type="text" placeholder="Search here" class="flex-1 border-0 outline-0 outline-offset-0 caret-black" />
+                    <input type="text" placeholder="Search here"
+                        class="flex-1 border-0 outline-0 outline-offset-0 caret-black" />
                     <button class="btn btn-circle bg-white border-0">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
@@ -192,7 +195,8 @@
                 </div>
             </div>
             <!-- fruits card on the bottom of the banner  -->
-            <div class="hidden my-4 md:visible md:w-4/5 mx-auto gap-x-1 md:absolute md:left-[10%] md:bottom-0 md:translate-y-1/2 md:grid md:grid-cols-5 bg-white md:rounded-lg shadow-lg">
+            <div
+                class="hidden my-4 md:visible md:w-4/5 mx-auto gap-x-1 md:absolute md:left-[10%] md:bottom-0 md:translate-y-1/2 md:grid md:grid-cols-5 bg-white md:rounded-lg shadow-lg">
                 <!-- card 01  -->
                 <div class="card bg-base-100 flex flex-col justify-center items-center">
                     <figure class="px-10 pt-6 ">
@@ -205,14 +209,14 @@
                     <figure class="px-10 pt-2">
                         <img src="./images/fruit2.png" alt="fruits" class="rounded-xl" />
                     </figure>
-                    <p class="text-center mt-4 text-base font-normal py-4">Orange</p>              
+                    <p class="text-center mt-4 text-base font-normal py-4">Orange</p>
                 </div>
                 <!-- card 03  -->
                 <div class="card bg-base-100 flex flex-col justify-center items-center">
                     <figure class="px-10 pt-6">
                         <img src="./images/fruit3.png" alt="fruits" class="rounded-xl" />
                     </figure>
-                    <p class="text-center mt-4 text-base font-normal py-4">Mango</p>             
+                    <p class="text-center mt-4 text-base font-normal py-4">Mango</p>
                 </div>
                 <!-- card 04  -->
                 <div class="card bg-base-100 flex flex-col justify-center items-center">
@@ -247,29 +251,38 @@
                 </div>
                 <!-- countdown timer  -->
                 <div class=" mx-auto grid grid-flow-col gap-5 text-center auto-cols-max">
-                    <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span style="--value:15;"></span>
-                        </span>
-                        days
+                    <div class="flex flex-col items-start">
+                        <div class="flex items-center">
+                            <span class="countdown font-mono text-4xl">
+                                <span style="--value:27;"></span>
+                            </span>
+                            <p class="text-2xl pl-3">:</p>
+                        </div>
+                        <p>Days</p>
                     </div>
-                    <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span style="--value:10;"></span>
-                        </span>
-                        hours
+                    <div class="flex flex-col items-start">
+                        <div class="flex items-center">
+                            <span class="countdown font-mono text-4xl">
+                                <span style="--value:11;"></span>
+                            </span>
+                            <p class="text-2xl pl-3">:</p>
+                        </div>
+                        <p>Hours</p>
                     </div>
-                    <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span style="--value:24;"></span>
-                        </span>
-                        min
+                    <div class="flex flex-col items-start">
+                        <div class="flex items-center">
+                            <span class="countdown font-mono text-4xl">
+                                <span style="--value:59;"></span>
+                            </span>
+                            <p class="text-2xl pl-3">:</p>
+                        </div>
+                        <p>Minutes</p>
                     </div>
-                    <div class="flex flex-col">
-                        <span class="countdown font-mono text-5xl">
-                            <span style="--value:31;"></span>
+                    <div class="flex flex-col items-start">
+                        <span class="countdown font-mono text-4xl">
+                            <span style="--value:59;"></span>
                         </span>
-                        sec
+                        <p>Seconds</p>
                     </div>
                 </div>
             </div>
@@ -298,14 +311,16 @@
                     <div class="card-actions my-2">
                         <dialog id="card1" class="modal">
                             <form method="dialog" class="modal-box">
-                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 border-0">✕</button>
+                                <button
+                                    class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 border-0">✕</button>
                                 <figure class="px-6 pt-6">
                                     <img src="./images/fruit6.png" alt="fruits" class="rounded-xl" />
                                 </figure>
                                 <div class="card-body items-center text-center">
                                     <h2 class="card-title p-2 border-b-2">12.90$ - 18.85$</h2>
                                     <p class="my-1 font-extrabold text-xl">Apples</p>
-                                    <p class="my-1 font-normal text-sm text-para-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <p class="my-1 font-normal text-sm text-para-color">Professional employees are there
+                                        for you to pick the most amazing and fresh fruits.</p>
                                     <div class="rating my-2">
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
@@ -340,21 +355,23 @@
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                             <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
-                        </div> 
+                        </div>
                         <p class="text-primary-color cursor-pointer" onclick="card2.showModal()">Details</p>
                     </div>
                     <!-- card 02 modal section  -->
                     <div class="card-actions my-2">
                         <dialog id="card2" class="modal">
                             <form method="dialog" class="modal-box">
-                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 border-0">✕</button>
+                                <button
+                                    class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 border-0">✕</button>
                                 <figure class="px-6 pt-6">
                                     <img src="./images/fruit7.png" alt="fruits" class="rounded-xl" />
                                 </figure>
                                 <div class="card-body items-center text-center">
                                     <h2 class="card-title p-2 border-b-2">12.90$ - 18.85$</h2>
                                     <p class="my-1 font-extrabold text-xl">Orange</p>
-                                    <p class="my-1 font-normal text-sm text-para-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <p class="my-1 font-normal text-sm text-para-color">Professional employees are there
+                                        for you to pick the most amazing and fresh fruits.</p>
                                     <div class="rating my-2">
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
@@ -399,14 +416,16 @@
                     <div class="card-actions my-2">
                         <dialog id="card3" class="modal">
                             <form method="dialog" class="modal-box">
-                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 border-0">✕</button>
+                                <button
+                                    class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 border-0">✕</button>
                                 <figure class="px-6 pt-6">
                                     <img src="./images/fruit8.png" alt="fruits" class="rounded-xl" />
                                 </figure>
                                 <div class="card-body items-center text-center">
                                     <h2 class="card-title p-2 border-b-2">12.90$ - 18.85$</h2>
                                     <p class="my-1 font-extrabold text-xl">Red Dragon</p>
-                                    <p class="my-1 font-normal text-sm text-para-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <p class="my-1 font-normal text-sm text-para-color">Professional employees are there
+                                        for you to pick the most amazing and fresh fruits.</p>
                                     <div class="rating my-2">
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
@@ -448,14 +467,16 @@
                     <div class="card-actions my-2">
                         <dialog id="card4" class="modal">
                             <form method="dialog" class="modal-box">
-                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 border-0">✕</button>
+                                <button
+                                    class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 border-0">✕</button>
                                 <figure class="px-6 pt-6">
                                     <img src="./images/fruit9.png" alt="fruits" class="rounded-xl" />
                                 </figure>
                                 <div class="card-body items-center text-center">
                                     <h2 class="card-title p-2 border-b-2">12.90$ - 18.85$</h2>
                                     <p class="my-1 font-extrabold text-xl">Banana</p>
-                                    <p class="my-1 font-normal text-sm text-para-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
+                                    <p class="my-1 font-normal text-sm text-para-color">Professional employees are there
+                                        for you to pick the most amazing and fresh fruits.</p>
                                     <div class="rating my-2">
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
