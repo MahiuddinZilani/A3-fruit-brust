@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
-    <!-- css styles which is not working in tailwind  -->
+    <!-- css styles which is not working in tailwind on cdn environment -->
     <style>
         .lato {
             font-family: 'Lato', sans-serif;
@@ -194,39 +194,39 @@
             <!-- fruits card on the bottom of the banner  -->
             <div class="hidden my-4 md:visible md:w-4/5 mx-auto gap-x-1 md:absolute md:left-[10%] md:bottom-0 md:translate-y-1/2 md:grid md:grid-cols-5 bg-white md:rounded-lg shadow-lg">
                 <!-- card 01  -->
-                <div class="card bg-base-100 flex flex-col justify-between">
-                    <figure class="px-10 pt-10 ">
+                <div class="card bg-base-100 flex flex-col justify-center items-center">
+                    <figure class="px-10 pt-6 ">
                         <img src="./images/fruit1.png" alt="fruits" class="rounded-xl" />
                     </figure>
-                    <h2 class="text-center mt-6 text-xl font-medium py-4">Strawberry</h2>
+                    <p class="text-center mt-4 text-base font-normal py-4">Strawberry</p>
                 </div>
                 <!-- card 02  -->
-                <div class="card bg-base-100 flex flex-col justify-between">
-                    <figure class="px-10 pt-10">
+                <div class="card bg-base-100 flex flex-col justify-center items-center">
+                    <figure class="px-10 pt-2">
                         <img src="./images/fruit2.png" alt="fruits" class="rounded-xl" />
                     </figure>
-                    <h2 class="text-center mt-6 text-xl font-medium py-4">Orange</h2>
+                    <p class="text-center mt-4 text-base font-normal py-4">Orange</p>              
                 </div>
                 <!-- card 03  -->
-                <div class="card bg-base-100 flex flex-col justify-between">
-                    <figure class="px-10 pt-10">
+                <div class="card bg-base-100 flex flex-col justify-center items-center">
+                    <figure class="px-10 pt-6">
                         <img src="./images/fruit3.png" alt="fruits" class="rounded-xl" />
                     </figure>
-                    <h2 class="text-center mt-6 text-xl font-medium py-4">Mango</h2>
+                    <p class="text-center mt-4 text-base font-normal py-4">Mango</p>             
                 </div>
                 <!-- card 04  -->
-                <div class="card bg-base-100 flex flex-col justify-between">
-                    <figure class="px-10 pt-10">
+                <div class="card bg-base-100 flex flex-col justify-center items-center">
+                    <figure class="px-10 pt-6">
                         <img src="./images/fruit4.png" alt="fruits" class="rounded-xl" />
                     </figure>
-                    <h2 class="text-center mt-6 text-xl font-medium py-4">Strawberry</h2>
+                    <p class="text-center mt-4 text-base font-normal py-4">Strawberry</p>
                 </div>
                 <!-- card 05  -->
-                <div class="card bg-base-100 flex flex-col justify-between">
-                    <figure class="px-10 pt-10">
+                <div class="card bg-base-100 flex flex-col justify-center items-center">
+                    <figure class="px-10 pt-6">
                         <img src="./images/fruit5.png" alt="fruits" class="rounded-xl" />
                     </figure>
-                    <h2 class="text-center mt-6 text-xl font-medium py-4">Pomegranate</h2>
+                    <p class="text-center mt-4 text-base font-normal py-4">Pomegranate<p2>
                 </div>
             </div>
         </div>
@@ -298,13 +298,14 @@
                     <div class="card-actions my-2">
                         <dialog id="card1" class="modal">
                             <form method="dialog" class="modal-box">
-                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 border-0">✕</button>
                                 <figure class="px-6 pt-6">
                                     <img src="./images/fruit6.png" alt="fruits" class="rounded-xl" />
                                 </figure>
                                 <div class="card-body items-center text-center">
-                                    <h2 class="card-title p-4 border-b-2">12.90$ - 18.85$</h2>
-                                    <p class="my-2">Apples</p>
+                                    <h2 class="card-title p-2 border-b-2">12.90$ - 18.85$</h2>
+                                    <p class="my-1 font-extrabold text-xl">Apples</p>
+                                    <p class="my-1 font-normal text-sm text-para-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                                     <div class="rating my-2">
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
@@ -346,13 +347,14 @@
                     <div class="card-actions my-2">
                         <dialog id="card2" class="modal">
                             <form method="dialog" class="modal-box">
-                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 border-0">✕</button>
                                 <figure class="px-6 pt-6">
                                     <img src="./images/fruit7.png" alt="fruits" class="rounded-xl" />
                                 </figure>
                                 <div class="card-body items-center text-center">
-                                    <h2 class="card-title p-4 border-b-2">12.90$ - 18.85$</h2>
-                                    <p class="my-2">Orange</p>
+                                    <h2 class="card-title p-2 border-b-2">12.90$ - 18.85$</h2>
+                                    <p class="my-1 font-extrabold text-xl">Orange</p>
+                                    <p class="my-1 font-normal text-sm text-para-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                                     <div class="rating my-2">
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
@@ -397,13 +399,14 @@
                     <div class="card-actions my-2">
                         <dialog id="card3" class="modal">
                             <form method="dialog" class="modal-box">
-                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 border-0">✕</button>
                                 <figure class="px-6 pt-6">
                                     <img src="./images/fruit8.png" alt="fruits" class="rounded-xl" />
                                 </figure>
                                 <div class="card-body items-center text-center">
-                                    <h2 class="card-title p-4 border-b-2">12.90$ - 18.85$</h2>
-                                    <p class="my-2">Red Dragon</p>
+                                    <h2 class="card-title p-2 border-b-2">12.90$ - 18.85$</h2>
+                                    <p class="my-1 font-extrabold text-xl">Red Dragon</p>
+                                    <p class="my-1 font-normal text-sm text-para-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                                     <div class="rating my-2">
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
@@ -445,13 +448,14 @@
                     <div class="card-actions my-2">
                         <dialog id="card4" class="modal">
                             <form method="dialog" class="modal-box">
-                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+                                <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 border-0">✕</button>
                                 <figure class="px-6 pt-6">
                                     <img src="./images/fruit9.png" alt="fruits" class="rounded-xl" />
                                 </figure>
                                 <div class="card-body items-center text-center">
-                                    <h2 class="card-title p-4 border-b-2">12.90$ - 18.85$</h2>
-                                    <p class="my-2">Banana</p>
+                                    <h2 class="card-title p-2 border-b-2">12.90$ - 18.85$</h2>
+                                    <p class="my-1 font-extrabold text-xl">Banana</p>
+                                    <p class="my-1 font-normal text-sm text-para-color">Professional employees are there for you to pick the most amazing and fresh fruits.</p>
                                     <div class="rating my-2">
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]" />
                                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-[#F85559]"
